@@ -1,10 +1,10 @@
 package controller;
 
-import interfaces.ICtrlCarro;
+import interfaces.ICtrlCliente;
 import interfaces.IRepCliente;
 import model.Cliente;
 
-public class CtrlCliente implements ICtrlCarro {
+public class CtrlCliente implements ICtrlCliente {
 	
 	IRepCliente iRepCliente;
 

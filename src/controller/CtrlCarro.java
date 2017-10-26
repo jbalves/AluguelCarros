@@ -13,28 +13,27 @@ public class CtrlCarro implements ICtrlCarro{
 	}
 
 	@Override
-	public void inserirCliete(Cliente c) {
+	public void inserirCarro(Cliente c) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void removerCliete(String cpf) {
+	public void removerCarro(String cpf) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public Cliente consultarCliete(String cpf) {
+	public Cliente consultarCarro(String cpf) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Cliente atualizarCliete(String cpf) {
+	public Cliente atualizarCarro(String cpf) {
 		// TODO Auto-generated method stub
 		return null;
-	}
-	
+	}	
 		
 }
