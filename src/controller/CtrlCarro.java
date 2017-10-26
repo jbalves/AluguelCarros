@@ -1,39 +1,32 @@
 package controller;
 
 import interfaces.ICtrlCarro;
-import interfaces.IRepCarro;
-import model.Cliente;
+import model.Carro;
 
-public class CtrlCarro implements ICtrlCarro{
-	
-	IRepCarro iRepCarro;
-	
-	public CtrlCarro(IRepCarro iRepCarro) {
-		this.iRepCarro = iRepCarro;
-	}
+public class CtrlCarro implements ICtrlCarro {
 
 	@Override
-	public void inserirCarro(Cliente c) {
+	public void inserirCarro(Carro c) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void removerCarro(String cpf) {
+	public void removerCarro(String chassi) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public Cliente consultarCarro(String cpf) {
+	public Carro consultarCarro(String chassi) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Cliente atualizarCarro(String cpf) {
+	public Carro atualizarCarro(Carro c) {
 		// TODO Auto-generated method stub
 		return null;
-	}	
-		
+	}
+
 }

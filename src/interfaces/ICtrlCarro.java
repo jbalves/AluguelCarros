@@ -1,14 +1,14 @@
 package interfaces;
 
-import model.Cliente;
+import model.Carro;
 
 public interface ICtrlCarro {
 	
-	public void inserirCarro(Cliente c);
+	public void inserirCarro(Carro c);
 	
-	public void removerCarro(String cpf);
+	public void removerCarro(String chassi);
 	
-	public Cliente consultarCarro(String cpf);
+	public Carro consultarCarro(String chassi);
 	
-	public Cliente atualizarCarro(String cpf);
+	public Carro atualizarCarro(Carro c);
 }
