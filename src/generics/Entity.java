@@ -2,7 +2,6 @@ package generics;
 
 public abstract class Entity{
 	private String id;
-
 	
 	public String getId() {
 		return id;
@@ -11,7 +10,4 @@ public abstract class Entity{
 	public void setId(String id) {
 		this.id = id;
 	}
-	
-	
-
 }

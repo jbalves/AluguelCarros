@@ -2,7 +2,9 @@ package model;
 
 import java.sql.Date;
 
-public class Carro {
+import generics.Entity;
+
+public class Carro extends Entity{
 	private String chassi;
 	private String modelo;
 	private Date ano;

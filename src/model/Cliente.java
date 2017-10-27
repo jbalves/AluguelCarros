@@ -1,6 +1,8 @@
 package model;
 
-public class Cliente {
+import generics.Entity;
+
+public class Cliente extends Entity{
 	private int cpf;
 	private String cnh;
 	private String nome;
