@@ -8,7 +8,6 @@ public class RepClienteDAO implements IRepCliente {
 	@Override
 	public void inserir(Cliente c) {
 		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
