@@ -1,14 +1,17 @@
 package DAO;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import interfaces.IRepCarro;
 import model.Carro;
 
 public class RepCarroDAO implements IRepCarro{
-
+	Collection<Carro> listCarros = new ArrayList<Carro>();
+	
 	@Override
 	public void inserir(Carro c) {
-		// TODO Auto-generated method stub
-		
+		listCarros.add(c);
 	}
 
 	@Override

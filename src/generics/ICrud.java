@@ -1,4 +1,4 @@
-package interfaces;
+package generics;
 
 public interface ICrud <E> {
 	public void inserir(E e);

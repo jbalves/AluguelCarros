@@ -1,5 +1,6 @@
 package interfaces;
 
+import generics.ICrud;
 import model.Cliente;
 
 public interface ICtrlCliente extends ICrud<Cliente>{

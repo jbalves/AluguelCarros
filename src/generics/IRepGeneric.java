@@ -1,4 +1,4 @@
-package interfaces;
+package generics;
 
 public interface IRepGeneric<E> {
 	public void inserir(E c);
