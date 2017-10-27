@@ -1,5 +1,7 @@
 package interfaces;
 
-public interface IRepCliente {
+import model.Cliente;
 
+public interface IRepCliente extends IRepGeneric<Cliente> {
+	public Cliente consultaCPF(String cpf);
 }
