@@ -2,7 +2,9 @@ package interfaces;
 
 import model.Cliente;
 
-public interface ICtrlCliente {
+public interface ICtrlCliente extends ICrud<Cliente>{
+	
+	/*
 	public void inserirCliente(Cliente c);
 	
 	public void removerCliente(String cpf);
@@ -10,4 +12,8 @@ public interface ICtrlCliente {
 	public Cliente consultarCliente(String cpf);
 	
 	public Cliente atualizarCliente(Cliente c);
+	*/
+	
+	public Cliente consultarCPF(String cpf);
+	
 }
