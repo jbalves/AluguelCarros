@@ -7,12 +7,12 @@ import generics.Entity;
 public class Carro extends Entity{
 	private String chassi;
 	private String modelo;
-	private Date ano;
+	private int ano;
 	private String kmRodados;
 	private String numPortas;
 	private EstadoCarro estado;
 	
-	public Carro(String chassi, String modelo, Date ano, String kmRodados, String numPortas, EstadoCarro estado) {
+	public Carro(String chassi, String modelo, int ano, String kmRodados, String numPortas, EstadoCarro estado) {
 		this.chassi = chassi;
 		this.modelo = modelo;
 		this.ano = ano;
@@ -37,11 +37,11 @@ public class Carro extends Entity{
 		this.modelo = modelo;
 	}
 
-	public Date getAno() {
+	public int getAno() {
 		return ano;
 	}
 
-	public void setAno(Date ano) {
+	public void setAno(int ano) {
 		this.ano = ano;
 	}
 

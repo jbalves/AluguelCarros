@@ -11,7 +11,7 @@ public class Fachada {
 	private CtrlCarro ctrlCarro;
 	private CtrlCliente ctrlCliente;
 
-	private static Fachada instance() {
+	public static Fachada instance() {
 		if (fachada == null) {
 			return new Fachada();
 		} else

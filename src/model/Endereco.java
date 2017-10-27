@@ -1,16 +1,26 @@
 package model;
 
 public class Endereco {
-	private int CEP;
+	private String CEP;
 	private String rua;
 	private String numero;
 	private String complemento;
 	
-	public int getCEP() {
+	public Endereco(String cEP, String rua, String numero, String complemento) {
+		CEP = cEP;
+		this.rua = rua;
+		this.numero = numero;
+		this.complemento = complemento;
+	}
+	
+	public Endereco() {
+	}
+	
+	public String getCEP() {
 		return CEP;
 	}
-	public void setCEP(int cEP) {
-		CEP = cEP;
+	public void setCEP(String CEP) {
+		CEP = CEP;
 	}
 	public String getRua() {
 		return rua;
