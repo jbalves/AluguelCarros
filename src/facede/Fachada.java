@@ -18,7 +18,7 @@ public class Fachada {
 			return fachada;
 	}
 
-	private Fachada() {
+	public Fachada() {
 		this.ctrlCarro = new CtrlCarro();
 		this.ctrlCliente = new CtrlCliente();
 	}
