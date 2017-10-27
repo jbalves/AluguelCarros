@@ -5,7 +5,7 @@ public class ClienteAssociado extends Cliente {
 	private int num_cartao;
 	private String nome_social;
 
-	public ClienteAssociado(int cpf, String cnh, String nome, int idade, int tempoHabilitacao, Endereco endereco,
+	public ClienteAssociado(String cpf, String cnh, String nome, int idade, int tempoHabilitacao, Endereco endereco,
 			CartaoCredito cartaoCredito) {
 		super(cpf, cnh, nome, idade, tempoHabilitacao, endereco, cartaoCredito);
 	}

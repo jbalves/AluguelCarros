@@ -3,7 +3,7 @@ package model;
 import generics.Entity;
 
 public class Cliente extends Entity{
-	private int cpf;
+	private String cpf;
 	private String cnh;
 	private String nome;
 	private int idade;
@@ -11,7 +11,7 @@ public class Cliente extends Entity{
 	private Endereco endereco;
 	private CartaoCredito cartaoCredito;
 	
-	public Cliente(int cpf, String cnh, String nome, int idade, int tempoHabilitacao, Endereco endereco,
+	public Cliente(String cpf, String cnh, String nome, int idade, int tempoHabilitacao, Endereco endereco,
 			CartaoCredito cartaoCredito) {
 		this.cpf = cpf;
 		this.cnh = cnh;
@@ -22,10 +22,10 @@ public class Cliente extends Entity{
 		this.cartaoCredito = cartaoCredito;
 	}
 	
-	public int getCpf() {
+	public String getCpf() {
 		return cpf;
 	}
-	public void setCpf(int cpf) {
+	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
 	public String getCnh() {
