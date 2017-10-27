@@ -2,12 +2,11 @@ package DAO;
 
 import interfaces.IRepCarro;
 import model.Carro;
-import model.Cliente;
 
 public class RepCarroNoSQL implements IRepCarro{
 
 	@Override
-	public void inserir(Cliente c) {
+	public void inserir(Carro c) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -29,6 +28,5 @@ public class RepCarroNoSQL implements IRepCarro{
 		// TODO Auto-generated method stub
 		
 	}
-
 
 }
