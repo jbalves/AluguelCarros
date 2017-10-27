@@ -6,9 +6,9 @@ import java.util.Collection;
 import interfaces.IRepCarro;
 import model.Carro;
 
-public class RepCarroDAO implements IRepCarro{
+public class RepCarroDAO implements IRepCarro {
 	Collection<Carro> listCarros = new ArrayList<Carro>();
-	
+
 	@Override
 	public void inserir(Carro c) {
 		listCarros.add(c);
@@ -16,21 +16,29 @@ public class RepCarroDAO implements IRepCarro{
 
 	@Override
 	public Carro consultar(String cod) {
-		// TODO Auto-generated method stub
+		for(int i=0;i<listCarros.size();i++) {
+			if(cod == ((ArrayList<Carro>) listCarros).get(i).getId()) 
+				return ((ArrayList<Carro>) listCarros).get(i);
+		}
 		return null;
 	}
 
 	@Override
 	public void remover(Carro e) {
-		// TODO Auto-generated method stub
-		
+		for (int i = 0; i < listCarros.size(); i++) {
+			if (e.getId() == ((ArrayList<Carro>) listCarros).get(i).getId())
+				((ArrayList<Carro>) listCarros).remove(i);
+		}
 	}
 
 	@Override
 	public void atualizar(Carro e) {
-		// TODO Auto-generated method stub
-		
+		for (int i = 0; i < listCarros.size(); i++) {
+			if (e.getId() == ((ArrayList<Carro>) listCarros).get(i).getId()) {
+				((ArrayList<Carro>) listCarros).set(i, e);
+			}
+		}
+
 	}
 
-	
 }
